@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Card Mailer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Birthday Card Designer</h1>
+        
+        <div class="card-designer">
+            <div class="preview-card" id="previewCard">
+                <div class="card-content">
+                    <h2 id="previewGreeting">Happy Birthday!</h2>
+                    <p id="previewMessage">Wishing you a fantastic day!</p>
+                </div>
+            </div>
+
+            <div class="controls">
+                <h3>Customize Your Card</h3>
+                <form id="cardForm">
+                    <div class="form-group">
+                        <label for="recipientName">Recipient's Name:</label>
+                        <input type="text" id="recipientName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="recipientEmail">Recipient's Email:</label>
+                        <input type="email" id="recipientEmail" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customMessage">Custom Message:</label>
+                        <textarea id="customMessage" rows="4"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="themeColor">Theme Color:</label>
+                        <select id="themeColor">
+                            <option value="theme1">Blue Dreams</option>
+                            <option value="theme2">Pink Delight</option>
+                            <option value="theme3">Golden Sunset</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="send-btn">Send Birthday Card</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="email.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
