@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .card-template-2 {
+            background: linear-gradient(135deg, #1a1a1a, #4a4a4a);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            font-family: 'Georgia', serif;
+            color: gold;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+            max-width: 400px;
+            margin: 20px auto;
+            border: 2px solid gold;
+        }
+        .card-template-2 h1 {
+            font-size: 2.8em;
+            margin-bottom: 25px;
+            color: gold;
+            font-family: 'Playfair Display', serif;
+        }
+        .card-template-2 .message {
+            font-size: 1.3em;
+            line-height: 1.7;
+            margin: 25px 0;
+            color: #ffffff;
+        }
+        .card-template-2 .signature {
+            font-style: italic;
+            margin-top: 35px;
+            color: gold;
+        }
+        .sparkle {
+            font-size: 30px;
+            margin: 15px;
+            animation: sparkle 1.5s ease-in-out infinite;
+            display: inline-block;
+        }
+        @keyframes sparkle {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.8; }
+        }
+        .decorative-line {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, gold, transparent);
+            margin: 20px auto;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-template-2">
+        <span class="sparkle">✨</span>
+        <h1>Happy Birthday</h1>
+        <div class="decorative-line"></div>
+        <div class="message">
+            <p>On this special day, may your life be touched with the magic of joy and the sparkle of happiness.</p>
+            <p class="recipient-name"></p>
+            <p>Here's to another wonderful year ahead!</p>
+        </div>
+        <div class="decorative-line"></div>
+        <div class="signature">
+            <p>Warmest wishes,</p>
+            <p class="sender-name"></p>
+        </div>
+        <span class="sparkle">✨</span>
+    </div>
+</body>
+</html>

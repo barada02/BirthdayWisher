@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .card-template-1 {
+            background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        .card-template-1 h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .card-template-1 .message {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+        .card-template-1 .signature {
+            font-style: italic;
+            margin-top: 30px;
+        }
+        .balloon {
+            font-size: 40px;
+            margin: 10px;
+            animation: float 2s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="card-template-1">
+        <div class="balloon">🎈</div>
+        <h1>Happy Birthday!</h1>
+        <div class="message">
+            <p>Wishing you a day filled with joy, laughter, and unforgettable moments!</p>
+            <p class="recipient-name"></p>
+            <p>May all your dreams come true!</p>
+        </div>
+        <div class="signature">
+            <p>With love,</p>
+            <p class="sender-name"></p>
+        </div>
+        <div class="balloon">🎁</div>
+    </div>
+</body>
+</html>
